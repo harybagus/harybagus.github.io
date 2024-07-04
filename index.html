@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -14,9 +14,36 @@
 </head>
 
 <body>
-    <h1>Hello, World!</h1>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nisi!</p>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container flex-lg-column">
+            <a class="navbar-brand ms-lg-3 mb-lg-3" href="#home">
+                <img src="./assets/images/selfisibagus.jpeg" width="150" alt="Bagus Hary"
+                    class="d-none d-lg-block rounded-circle mb-lg-3">
+                <span class="h3 fw-bold d-block">Bagus Hary</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav flex-lg-column">
+                    <li class="nav-item mb-lg-3">
+                        <a class="nav-link link-custom" href="#home"><i class="las la-home"></i> Beranda</a>
+                    </li>
+                    <li class="nav-item mb-lg-3">
+                        <a class="nav-link link-custom" href="#portfolio"><i class="las la-laptop-code"></i>
+                            Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-custom" href="#contact"><i class="las la-sms"></i> Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
 
     <!-- java script -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
