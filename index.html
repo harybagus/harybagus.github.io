@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" data-bs-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
@@ -44,6 +44,37 @@
         </div>
     </nav>
     <!-- end of navbar -->
+
+    <!-- content wrapper -->
+    <div id="content-wrapper">
+
+        <!-- home -->
+        <section id="home" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h1 class="heading-text mb-4 mb-lg-5">Saya seorang <span class="text-brand">web developer</span>
+                            dan
+                            juga
+                            <span class="text-brand">mahasiswa</span> di Universitas
+                            Bina Sarana
+                            Informatika
+                        </h1>
+
+                        <div>
+                            <a href="#portfolio" class="btn btn-brand me-3 d-block d-md-inline mb-2 mb-md-0">Jelajahi
+                                portofolio
+                                saya</a>
+                            <a href="#contact" class="link-custom pb-2"><i class="las la-sms"></i> Hubungi saya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of home -->
+
+    </div>
+    <!-- end of content wrapper -->
 
     <!-- java script -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
