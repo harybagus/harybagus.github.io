@@ -23,10 +23,12 @@
                     class="d-none d-lg-block rounded-circle mb-lg-3">
                 <span class="h3 fw-bold d-block">Bagus Hary</span>
             </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav flex-lg-column">
                     <li class="nav-item mb-lg-3">
@@ -47,6 +49,32 @@
 
     <!-- content wrapper -->
     <div id="content-wrapper">
+
+        <!-- theme -->
+        <div class="container">
+            <div class="dropdown px-lg-5">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="las la-sun theme-icon-active" data-theme-icon-active="la-sun"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <button class="dropdown-item" type="button" data-bs-theme-value="light">
+                            <i class="las la-sun me-2 opacity-50" data-theme-icon="la-sun"></i>
+                            Light
+                        </button>
+                        <button class="dropdown-item" type="button" data-bs-theme-value="dark">
+                            <i class="las la-moon me-2 opacity-50" data-theme-icon="la-moon"></i>
+                            Dark
+                        </button>
+                        <button class="dropdown-item" type="button" data-bs-theme-value="auto">
+                            <i class="las la-adjust me-2 opacity-50" data-theme-icon="la-adjust"></i>
+                            Auto
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end of theme -->
 
         <!-- home -->
         <section id="home" class="full-height px-lg-5">
@@ -78,6 +106,7 @@
 
     <!-- java script -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/theme.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
 
