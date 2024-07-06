@@ -18,9 +18,9 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container flex-lg-column">
-            <a class="navbar-brand ms-lg-3 mb-lg-3" href="#home">
+            <a class="navbar-brand ms-lg-4 mb-lg-3" href="#home">
                 <img src="./assets/images/selfisibagus.jpeg" width="150" alt="Bagus Hary"
-                    class="d-none d-lg-block rounded-circle mb-lg-3">
+                    class="d-none d-lg-block rounded-circle mb-lg-3 full-width">
                 <span class="h3 fw-bold d-block">Bagus Hary</span>
             </a>
 
@@ -52,7 +52,7 @@
 
         <!-- theme -->
         <div class="container">
-            <div class="dropdown px-lg-5">
+            <div class="dropend px-lg-5" data-aos="fade-right">
                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="las la-sun theme-icon-active" data-theme-icon-active="la-sun"></i>
                 </button>
@@ -81,7 +81,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10">
-                        <h1 class="heading-text mb-4 mb-lg-5">Saya seorang <span class="text-brand">web developer</span>
+                        <h1 class="heading-text mb-4 mb-lg-5" data-aos="fade-up">Saya seorang <span
+                                class="text-brand">web developer</span>
                             dan
                             juga
                             <span class="text-brand">mahasiswa</span> di Universitas
@@ -89,7 +90,7 @@
                             Informatika
                         </h1>
 
-                        <div>
+                        <div data-aos="fade-up" data-aos-delay="250">
                             <a href="#portfolio" class="btn btn-brand me-3 d-block d-md-inline mb-2 mb-md-0">Jelajahi
                                 portofolio
                                 saya</a>
@@ -100,6 +101,103 @@
             </div>
         </section>
         <!-- end of home -->
+
+        <!-- portfolio -->
+        <section id="portfolio" class="full-height px-lg-5">
+            <div class="container">
+                <div class="pb-4" data-aos="fade-up">
+                    <h6 class="text-brand">Portfolio</h6>
+                    <h1>Beberapa software yang sudah saya buat</h1>
+                </div>
+
+                <div class="row gy-4" data-aos="fade-up">
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="250">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-top-4">
+                                <img src="./assets/images/todo.png" alt="todo." class="rounded-top-4 full-width">
+                            </div>
+
+                            <div class="card-custom-content p-4">
+                                <h2 class="text-brand">todo.</h2>
+                                <p>Adalah aplikasi berbasis mobile yang digunakan untuk mencatat dan mengelola
+                                    kegiatan sehari-hari.</p>
+                                <p class="mb-1">Aplikasi ini dibangun menggunakan</p>
+
+                                <div class="mb-2">
+                                    <a href="https://dart.dev/" class="text-primary link-custom-blue" target="_blank">
+                                        <img src="./assets/images/dart.png" alt="Dart" width="35">
+                                    </a>
+                                    <a href="https://flutter.dev/" class="text-primary link-custom-blue"
+                                        target="_blank">
+                                        <img src="./assets/images/flutter.png" alt="Flutter" width="35">
+                                    </a>
+                                </div>
+
+                                <a href="https://github.com/harybagus/todo" class="link-custom" target="_blank">Lihat
+                                    Repositori</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-top-4">
+                                <img src="./assets/images/remob.png" alt="ReMob" class="rounded-top-4 full-width">
+                            </div>
+
+                            <div class="card-custom-content p-4">
+                                <h2 class="text-brand">ReMob</h2>
+                                <p>Adalah website rental mobil yang memiliki dua peran, yaitu admin dan pengguna. Admin
+                                    dapat melakukan CRUD (Create, Read, Update, dan Delete) untuk data mobil dan
+                                    data pengguna, sedangkan pengguna dapat menyewa mobil.</p>
+                                <p class="mb-1">Website ini dibangun menggunakan</p>
+
+                                <div class="mb-2">
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                                        class="text-danger link-custom-red" target="_blank">
+                                        <img src="./assets/images/html.png" alt="HTML" width="35">
+                                    </a>
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                                        class="text-primary link-custom-blue" target="_blank">
+                                        <img src="./assets/images/css.png" alt="CSS" width="35">
+                                    </a>
+                                    <a href="https://startbootstrap.com/theme/sb-admin-2"
+                                        class="text-primary link-custom-blue" target="_blank">
+                                        <img src="./assets/images/sbadmin.png" alt="SB Admin 2" width="30">
+                                    </a>
+                                    <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/"
+                                        class="text-purple link-custom-purple" target="_blank">
+                                        <img src="./assets/images/bootstrap.png" alt="Bootstrap" width="35">
+                                    </a>
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                                        class="text-warning link-custom-yellow" target="_blank">
+                                        <img src="./assets/images/javascript.png" alt="JavaScript" width="35">
+                                    </a>
+                                    <a href="https://www.php.net/" class="text-purple link-custom-purple"
+                                        target="_blank">
+                                        <img src="./assets/images/php.png" alt="PHP" width="35">
+                                    </a>
+                                    <a href="https://codeigniter.com/" class="text-danger link-custom-red"
+                                        target="_blank">
+                                        <img src="./assets/images/codeigniter.png" alt="CodeIgniter" width="35">
+                                    </a>
+                                    <a href="https://www.mysql.com/" class="text-primary link-custom-blue"
+                                        target="_blank">
+                                        <img src="./assets/images/mysql.png" alt="MySQL" width="35">
+                                    </a>
+                                </div>
+
+                                <a href="https://github.com/harybagus/remob" class="link-custom" target="_blank">Lihat
+                                    Repositori</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- end of portfolio -->
 
     </div>
     <!-- end of content wrapper -->
