@@ -113,7 +113,8 @@ a {
   background-color: var(--bs-success-bg-subtle);
 }
 
-.dropdown-item:hover {
+.dropdown-item:hover,
+.dropdown-item.active {
   background-color: var(--bs-success-bg-subtle);
   color: var(--bs-success);
 }
