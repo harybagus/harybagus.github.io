@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/css/aos.css">
     <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="#">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
@@ -38,8 +39,8 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container flex-lg-column">
-            <a class="navbar-brand ms-lg-4 mb-lg-3" href="#home">
-                <img src="./assets/images/selfisibagus.jpeg" width="150" alt="Bagus Hary"
+            <a class="navbar-brand ms-lg-3 mb-lg-3 text-center" href="#home">
+                <img src="./assets/images/selfisibagus.jpeg" alt="Bagus Hary"
                     class="d-none d-lg-block rounded-circle mb-lg-3 full-width">
                 <span class="h3 fw-bold d-block">Bagus Hary</span>
             </a>
@@ -232,6 +233,58 @@
         </section>
         <!-- end of portfolio -->
 
+        <!-- contact -->
+        <section id="contact" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row justify-content-center text-center" data-aos="fade-up">
+                    <div class="col-lg-8 pb-4">
+                        <h6 class="text-brand">Kontak</h6>
+                        <h1>Tertarik bekerja sama?<br>Hubungi saya</h1>
+                    </div>
+
+                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="250">
+                        <form name="portfolio-contact-form" class="row text-start g-lg-3 gy-3">
+                            <div class="col-12 my-alert d-none">
+                                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                    <strong>Terima kasih!</strong> Pesan Anda sudah kami terima.
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                        aria-label="Close"></button>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="name" class="mb-1">Nama Lengkap <span class="text-danger">*</span></label>
+                                <input name="name" type="text" class="form-control" id="name" placeholder="John Doe"
+                                    required>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="email" class="mb-1">Email <span class="text-danger">*</span></label>
+                                <input name="email" type="email" class="form-control" id="email"
+                                    placeholder="john@gmail.com" required>
+                            </div>
+
+                            <div class="form-group col-12">
+                                <label for="message" class="mb-1">Pesan <span class="text-danger">*</span></label>
+                                <textarea name="message" rows="4" class="form-control" id="message"
+                                    placeholder="Tulis pesan Anda" required></textarea>
+                            </div>
+
+                            <div class="form-group col-12">
+                                <button type="submit" class="btn btn-brand btn-submit">Kirim</button>
+
+                                <button class="btn btn-success btn-loading d-none" type="button" disabled>
+                                    <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                                    <span role="status">Loading...</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of contact -->
+
     </div>
     <!-- end of content wrapper -->
 
@@ -240,6 +293,7 @@
     <script src="./assets/js/theme.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/form-to-google-sheets.js"></script>
 
 </body>
 

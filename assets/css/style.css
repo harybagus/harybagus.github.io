@@ -141,6 +141,25 @@ a {
   box-shadow: -6px 6px 0 0 var(--bs-success);
 }
 
+/* contact */
+#contact .form-control {
+  background-color: transparent;
+  border-color: var(--bs-success-bg-subtle);
+}
+
+#contact .form-control:focus {
+  border-color: var(--bs-success);
+  box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+  color: var(--bs-secondary);
+}
+
+#contact input.form-control {
+  height: 45px;
+}
+
 /* media > 992px */
 @media (min-width: 992px) {
   /* navbar */
