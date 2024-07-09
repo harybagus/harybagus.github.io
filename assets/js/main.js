@@ -14,3 +14,6 @@ AOS.init({
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+const year = new Date().getFullYear();
+document.getElementById('year').innerHTML = year.toString();
