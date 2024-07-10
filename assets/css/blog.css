@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--bs-success);
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* link custom */
+.link-custom {
+  font-weight: 700;
+  position: relative;
+}
+
+.link-custom::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  background-color: var(--bs-success);
+  left: 0;
+  top: 100%;
+  transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+  width: 100%;
+}
+
+/* blog list */
+.blog-list-wrapper {
+  background-color: var(--bs-success-bg-subtle);
+}
+
+/* dropdown */
+.dropdown {
+  position: absolute;
+  top: 45px;
+  right: 4vw;
+}
+
+.dropdown-toggle,
+.dropdown-menu {
+  background-color: var(--bs-success-bg-subtle);
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus,
+.dropdown-menu:hover,
+.dropdown-menu:focus {
+  background-color: var(--bs-success-bg-subtle);
+}
+
+.dropdown-item:hover,
+.dropdown-item.active {
+  background-color: var(--bs-success-bg-subtle);
+  color: var(--bs-success);
+}
+
+/* blog */
+.blog-wrapper .headline {
+  font-weight: 700;
+}
+
+/* copy to clipboard */
+.copy-to-clipboard {
+  cursor: pointer;
+  background-color: var(--bs-success-bg-subtle);
+}
+
+.copy-to-clipboard.active::before {
+  content: "Berhasil disalin";
+  padding-right: 10px;
+  margin-right: 5px;
+  border-right: solid 1px;
+}
+
+@media (min-width: 768px) {
+  /* dropdown */
+  .dropdown {
+    right: 5vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .blog-wrapper {
+    background-color: var(--bs-success-bg-subtle);
+  }
+
+  /* dropdown */
+  .dropdown {
+    top: 95px;
+  }
+}
