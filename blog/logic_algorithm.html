@@ -50,22 +50,12 @@
 
                     <div class="row gy-4">
                         <div class="col-md-6 col-lg-12">
-                            <a href="../blog/logic_algorithm.html" class="mb-3">
-                                <img src="../assets/images/logic_algorithm.jpeg"
-                                    alt="Dari Logika ke Algoritma: Langkah Demi Langkah"
+                            <a href="../blog/introduction_web_programming.html" class="mb-3">
+                                <img src="../assets/images/introduction_web_programming.jpg"
+                                    alt="Pengantar Web Programming: Apa yang Harus Anda Ketahui"
                                     class="full-width mb-3 mb-lg-2 rounded-3">
 
-                                <h6 class="link-custom">Dari Logika ke Algoritma: Langkah Demi Langkah</h6>
-                            </a>
-                        </div>
-
-                        <div class="col-md-6 col-lg-12">
-                            <a href="../blog/logic_algorithm.html" class="mb-3">
-                                <img src="../assets/images/logic_algorithm.jpeg"
-                                    alt="Dari Logika ke Algoritma: Langkah Demi Langkah"
-                                    class="full-width mb-3 mb-lg-2 rounded-3">
-
-                                <h6 class="link-custom">Dari Logika ke Algoritma: Langkah Demi Langkah</h6>
+                                <h6 class="link-custom">Pengantar Web Programming: Apa yang Harus Anda Ketahui</h6>
                             </a>
                         </div>
                     </div>
@@ -385,11 +375,26 @@
 
     </div>
 
+    <!-- copy to clipboard -->
+    <script>
+        const copyToClipboard = document.querySelector(".copy-to-clipboard");
+        const sourceCode = document.querySelector("#source-code");
+
+        copyToClipboard.addEventListener("click", function () {
+            navigator.clipboard.writeText(sourceCode.innerText);
+
+            copyToClipboard.classList.add("active");
+
+            setTimeout(function () {
+                copyToClipboard.classList.remove("active");
+            }, 3000);
+        });
+    </script>
+
     <!-- java script -->
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/theme.js"></script>
     <script src="../assets/js/blog.js"></script>
-    <script src="../assets/js/copy-to-clipboard.js"></script>
 
     <!-- prism.js -->
     <script src="../assets/js/prism.js"></script>

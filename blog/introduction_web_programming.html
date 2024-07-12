@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengantar Web Programming: Apa yang Harus Anda Ketahui | Bagus Hary</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+
+    <!-- prism.js -->
+    <link rel="stylesheet" href="../assets/css/prism.css">
+</head>
+
+<body>
+
+    <!-- svg path -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="circle-half" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16" />
+        </symbol>
+
+        <symbol id="moon-stars-fill" fill="currentColor" viewBox="0 0 16 16">
+            <path
+                d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286" />
+            <path
+                d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+        </symbol>
+
+        <symbol id="sun-fill" fill="currentColor" viewBox="0 0 16 16">
+            <path
+                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+        </symbol>
+    </svg>
+    <!-- end of svg path -->
+
+    <div class="container my-5">
+        <div class="row">
+
+            <!-- blog list -->
+            <section class="col-lg-3 order-2 order-lg-1">
+                <div class="blog-list-wrapper rounded-4 p-4 p-lg-3">
+                    <h5 class="mb-3"><i class="las la-newspaper"></i> Blog lainnya</h5>
+
+                    <hr class="border-2">
+
+                    <div class="row gy-4">
+                        <div class="col-md-6 col-lg-12">
+                            <a href="../blog/logic_algorithm.html" class="mb-3">
+                                <img src="../assets/images/logic_algorithm.jpeg"
+                                    alt="Dari Logika ke Algoritma: Langkah Demi Langkah"
+                                    class="full-width mb-3 mb-lg-2 rounded-3">
+
+                                <h6 class="link-custom">Dari Logika ke Algoritma: Langkah Demi Langkah</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end of blog list -->
+
+            <!-- blog -->
+            <section class="col-lg-9 order-1 order-lg-2">
+                <div class="blog-wrapper rounded-4 p-lg-5">
+
+                    <!-- theme -->
+                    <div class="container">
+                        <div class="dropdown px-lg-5" data-aos="fade-right">
+                            <button class="btn dropdown-toggle" id="bd-theme" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+                                    <use href="#circle-half"></use>
+                                </svg>
+                                <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+                            </button>
+
+                            <ol class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+                                <li>
+                                    <button class="dropdown-item" type="button" data-bs-theme-value="light">
+                                        <svg class="bi me-2" width="1em" height="1em">
+                                            <use href="#sun-fill"></use>
+                                        </svg>
+                                        Light
+                                    </button>
+
+                                    <button class="dropdown-item" type="button" data-bs-theme-value="dark">
+                                        <svg class="bi me-2" width="1em" height="1em">
+                                            <use href="#moon-stars-fill"></use>
+                                        </svg>
+                                        Dark
+                                    </button>
+
+                                    <button class="dropdown-item" type="button" data-bs-theme-value="auto">
+                                        <svg class="bi me-2" width="1em" height="1em">
+                                            <use href="#circle-half"></use>
+                                        </svg>
+                                        Auto
+                                    </button>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <!-- end of theme -->
+
+                    <div>
+                        <a href="https://harybagus.github.io" class="me-0">
+                            <img src="../assets/images/selfisibagus.jpeg" alt="Bagus Hary" class="rounded-circle me-2"
+                                width="40">
+                            <span class="link-custom">Bagus Hary</span>
+                        </a>
+
+                        <span>~ 12 Juli 2024</span>
+                    </div>
+
+                    <h2 class="headline py-3">Pengantar Web Programming: Apa yang Harus Anda Ketahui</h2>
+
+                    <img src="../assets/images/introduction_web_programming.jpg" alt="Logic and Algorithm"
+                        class="full-width rounded-4">
+
+                    <p class="opening py-3">Web programming adalah salah satu keterampilan yang sangat dibutuhkan di era
+                        digital ini. Dengan semakin banyaknya bisnis dan individu yang beralih ke platform online,
+                        pemahaman tentang cara membuat dan mengelola website menjadi semakin penting. Artikel ini akan
+                        memberikan pengantar dasar tentang web programming, mulai dari konsep dasar hingga alat yang
+                        Anda butuhkan untuk memulai.</p>
+
+                    <div class="table-of-content py-3">
+                        <h4>Daftar Isi</h4>
+                        <ul>
+                            <li><a href="#web-programming">Apa itu Web Programming?</a></li>
+                            <li><a href="#important">Mengapa Web Programming Penting</a></li>
+                            <li><a href="#programming-language">Bahasa Pemrograman dan Teknologi Dasar</a></li>
+                            <li><a href="#tools-required">Alat yang Dibutuhkan</a></li>
+                            <li><a href="#start">Memulai dengan Web Programming Algoritma</a></li>
+                            <li><a href="#learning-resources">Sumber Belajar Web Programming</a></li>
+                            <li><a href="#conclusion">Kesimpulan</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="py-3" id="web-programming">
+                        <h4>Apa itu Web Programming?</h4>
+
+                        <p>Web programming, atau pemrograman web, adalah proses membuat aplikasi atau situs web yang
+                            berjalan di browser web. Ini melibatkan penulisan kode untuk struktur halaman web,
+                            desain visual, dan fungsi interaktif. Web programming mencakup beberapa bahasa dan
+                            teknologi, seperti HTML, CSS, dan JavaScript.</p>
+                    </div>
+
+                    <div class="py-3" id="important">
+                        <h4>Mengapa Web Programming Penting</h4>
+
+                        <ol>
+                            <li><span class="text-bold">Permintaan Tinggi</span><br>Keterampilan pemrograman web
+                                sangat dicari di berbagai industri.</li>
+                            <li><span class="text-bold">Fleksibilitas Karir</span><br>Anda dapat bekerja sebagai
+                                freelancer, dalam tim pengembangan, atau bahkan memulai bisnis sendiri.</li>
+                            <li><span class="text-bold">Kreativitas</span><br>Web programming memungkinkan Anda
+                                untuk menciptakan solusi unik dan kreatif untuk berbagai masalah.</li>
+                        </ol>
+                    </div>
+
+                    <div class="py-3" id="programming-language">
+                        <h4>Bahasa Pemrograman dan Teknologi Dasar</h4>
+
+                        <ol>
+                            <li><span class="text-bold">HTML (HyperText Markup Language)</span>
+                                <br>
+
+                                Bahasa dasar yang digunakan untuk membuat struktur halaman web. HTML menentukan
+                                elemen-elemen seperti paragraf, heading, link, dan gambar. Berikut contoh HTML:
+
+                                <br>
+
+                                <div class="bg-secondary border border-5 border-secondary rounded-3 mt-2 mb-4">
+                                    <div class="row justify-content-between py-2 ps-3 pe-4">
+                                        <span class="col-auto py-2 text-white">index.html</span>
+                                        <span class="col-auto copy-to-clipboard copy-html py-2 rounded-1">
+                                            <i class="las la-copy"></i>
+                                        </span>
+                                    </div>
+
+                                    <pre class="m-0">
+                                        <code class="language-html" id="source-code-html">
+                                            &lt;!DOCTYPE html>
+                                            &lt;html lang="en">
+                                            
+                                            &lt;head>
+                                                &lt;meta charset="UTF-8">
+                                                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                                &lt;title>Document&lt;/title>
+                                                &lt;link rel="stylesheet" href="style.css">
+                                            &lt;/head>
+                                            
+                                            &lt;body>
+                                                &lt;h1>Hello, World!&lt;/h1>
+
+                                                &lt;p class="paragraph">Lorem ipsum &lt;span id="span-1">dolor sit amet&lt;/span> consectetur adipisicing elit. Ab laudantium
+                                                    quidem molestiae exercitationem ratione nesciunt!&lt;/p>
+                                            
+                                                &lt;p class="paragraph">Lorem ipsum &lt;span id="span-2">dolor sit amet&lt;/span> consectetur adipisicing elit. Maxime,
+                                                    perferendis!&lt;/p>
+                                            
+                                                &lt;p class="paragraph">Lorem ipsum &lt;span id="span-3">dolor sit amet&lt;/span> consectetur adipisicing elit. Distinctio
+                                                    modi neque ut sit nesciunt magni.&lt;/p>
+
+                                                &lt;button type="button">Klik saya!&lt;/button>
+
+                                                &lt;script src="script.js">&lt;/script>
+                                            &lt;/body>
+                                            
+                                            &lt;/html>
+                                        </code>
+                                    </pre>
+                                </div>
+                            </li>
+                            <li><span class="text-bold">CSS (Cascading Style Sheets)</span>
+                                <br>
+
+                                Digunakan untuk mengatur tampilan visual halaman web. Dengan CSS, Anda dapat mengatur
+                                layout, warna, font, dan elemen desain lainnya. Berikut contoh CSS:
+
+                                <br>
+
+                                <div class="bg-secondary border border-5 border-secondary rounded-3 mt-2 mb-4">
+                                    <div class="row justify-content-between py-2 ps-3 pe-4">
+                                        <span class="col-auto py-2 text-white">style.css</span>
+                                        <span class="col-auto copy-to-clipboard copy-css py-2 rounded-1">
+                                            <i class="las la-copy"></i>
+                                        </span>
+                                    </div>
+
+                                    <pre class="m-0">
+                                        <code class="language-css" id="source-code-css">
+                                            body {
+                                                font-family: Georgia, "Times New Roman", Times, serif;
+                                            }
+                                            
+                                            h1 {
+                                                color: blueviolet;
+                                            }
+                                            
+                                            .paragraph {
+                                                background-color: brown;
+                                                color: #fff;
+                                            }
+                                            
+                                            span {
+                                                text-decoration: underline;
+                                            }
+                                            
+                                            #span-1 {
+                                                background-color: green;
+                                            }
+                                            
+                                            #span-2 {
+                                                background-color: darkslateblue;
+                                            }
+                                            
+                                            #span-3 {
+                                                background-color: hotpink;
+                                            }
+                                            
+                                            button {
+                                                background-color: darkorange;
+                                                padding: 10px;
+                                                border-radius: 10px;
+                                            }
+                                        </code>
+                                    </pre>
+                                </div>
+                            </li>
+                            <li><span class="text-bold">JavaScript</span>
+                                <br>
+
+                                Bahasa pemrograman yang digunakan untuk menambahkan interaktivitas ke halaman web.
+                                JavaScript memungkinkan Anda membuat efek dinamis seperti slider gambar, formulir yang
+                                validasi otomatis, dan banyak lagi. Berikut contoh JavaScript:
+
+                                <br>
+
+                                <div class="bg-secondary border border-5 border-secondary rounded-3 mt-2">
+                                    <div class="row justify-content-between py-2 ps-3 pe-4">
+                                        <span class="col-auto py-2 text-white">script.js</span>
+                                        <span class="col-auto copy-to-clipboard copy-javascript py-2 rounded-1">
+                                            <i class="las la-copy"></i>
+                                        </span>
+                                    </div>
+
+                                    <pre class="m-0">
+                                        <code class="language-javascript" id="source-code-javascript">
+                                            const button = document.querySelector("button");
+
+                                            button.addEventListener("click", function () {
+                                                alert("Terima kasih sudah mengklik saya");
+                                            });
+                                        </code>
+                                    </pre>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="py-3" id="tools-required">
+                        <h4>Alat yang Dibutuhkan</h4>
+
+                        <ol>
+                            <li><span class="text-bold">Text Editor</span><br>Alat untuk menulis kode. Contoh yang
+                                populer adalah Visual Studio Code, Sublime Text, dan Atom.</li>
+                            <li><span class="text-bold">Web Browser</span><br>Untuk menguji dan melihat hasil kerja
+                                Anda. Chrome, Firefox, dan Safari adalah beberapa opsi yang baik.</li>
+                        </ol>
+                    </div>
+
+                    <div class="py-3" id="start">
+                        <h4>Memulai dengan Web Programming</h4>
+
+                        <ol>
+                            <li><span class="text-bold">Pelajari Dasar-Dasarnya</span><br>Mulailah dengan memahami HTML
+                                dan CSS. Banyak tutorial online dan kursus gratis yang dapat membantu Anda memulai.</li>
+                            <li><span class="text-bold">Buat Proyek Sederhana</span><br>Terapkan pengetahuan Anda dengan
+                                membuat halaman web sederhana, seperti halaman profil atau blog.</li>
+                            <li><span class="text-bold">Terus Belajar</span><br>Setelah menguasai dasar-dasarnya,
+                                pelajari JavaScript dan teknologi lain seperti jQuery, React, atau Angular.</li>
+                        </ol>
+                    </div>
+
+                    <div class="py-3" id="learning-resources">
+                        <h4>Sumber Belajar Web Programming</h4>
+
+                        <ol>
+                            <li><span class="text-bold">YouTube Channel Web Programming UNPAS</span><br>Channel ini
+                                dikelola oleh dosen Universitas Pasundan (UNPAS) yaitu Sandhika Galih yang menyediakan
+                                tutorial lengkap
+                                tentang web development dari dasar hingga tingkat lanjut.</li>
+                            <li><span class="text-bold">MDN Web Docs</span><br>Dokumentasi resmi dari Mozilla yang
+                                menyediakan panduan lengkap tentang HTML, CSS, dan JavaScript.</li>
+                            <li><span class="text-bold">YouTube Channel Programmer Zaman Now</span><br>Dikelola oleh Eko
+                                Kurniawan Khannedy, seorang profesional berpengalaman di bidang teknologi, kanal ini
+                                menyediakan berbagai konten edukatif yang mencakup berbagai topik pemrograman dan
+                                teknologi.</li>
+                        </ol>
+                    </div>
+
+                    <div class="py-3 py-lg-0" id="conclusion">
+                        <h4>Kesimpulan</h4>
+
+                        <p>Web programming adalah keterampilan yang berharga dan seru untuk dipelajari. Dengan pemahaman
+                            dasar tentang HTML, CSS, dan JavaScript, Anda dapat mulai membangun halaman web dan aplikasi
+                            yang menarik. Teruslah belajar dan bereksperimen, dan siapa tahu, Anda mungkin saja
+                            menemukan karir baru atau hobi yang memuaskan.</p>
+                    </div>
+
+                </div>
+            </section>
+            <!-- end of blog -->
+
+        </div>
+    </div>
+
+    <!-- copy to clipboard -->
+    <script>
+        const copyHTML = document.querySelector(".copy-html");
+        const sourceCodeHTML = document.querySelector("#source-code-html");
+
+        copyHTML.addEventListener("click", function () {
+            navigator.clipboard.writeText(sourceCodeHTML.innerText);
+
+            copyHTML.classList.add("active");
+
+            setTimeout(function () {
+                copyHTML.classList.remove("active");
+            }, 3000);
+        });
+
+        const copyCSS = document.querySelector(".copy-css");
+        const sourceCodeCSS = document.querySelector("#source-code-css");
+
+        copyCSS.addEventListener("click", function () {
+            navigator.clipboard.writeText(sourceCodeCSS.innerText);
+
+            copyCSS.classList.add("active");
+
+            setTimeout(function () {
+                copyCSS.classList.remove("active");
+            }, 3000);
+        });
+
+        const copyJavascript = document.querySelector(".copy-javascript");
+        const sourceCodeJavascript = document.querySelector("#source-code-javascript");
+
+        copyJavascript.addEventListener("click", function () {
+            navigator.clipboard.writeText(sourceCodeJavascript.innerText);
+
+            copyJavascript.classList.add("active");
+
+            setTimeout(function () {
+                copyJavascript.classList.remove("active");
+            }, 3000);
+        });
+    </script>
+
+    <!-- java script -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/theme.js"></script>
+    <script src="../assets/js/blog.js"></script>
+
+    <!-- prism.js -->
+    <script src="../assets/js/prism.js"></script>
+
+</body>
+
+</html>
