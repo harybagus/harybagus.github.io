@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bagus Hary">
+    <meta name="keywords" content="Kesalahan, Hindari, Belajar, Web, Programming">
+    <meta name="description"
+        content="Beberapa kesalahan umum yang harus dihindari saat belajar web programming dan bagaimana cara mengatasinya.">
+
+    <title>Kesalahan Umum yang Harus Dihindari Saat Belajar Web Programming | Bagus Hary</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+
+    <!-- prism.js -->
+    <link rel="stylesheet" href="../assets/css/prism.css">
+</head>
+
+<body>
+
+    <!-- svg path -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="circle-half" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16" />
+        </symbol>
+
+        <symbol id="moon-stars-fill" fill="currentColor" viewBox="0 0 16 16">
+            <path
+                d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286" />
+            <path
+                d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+        </symbol>
+
+        <symbol id="sun-fill" fill="currentColor" viewBox="0 0 16 16">
+            <path
+                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+        </symbol>
+    </svg>
+    <!-- end of svg path -->
+
+    <div class="container my-5">
+
+        <div class="row">
+
+            <!-- blog list -->
+            <section class="col-lg-3 order-2 order-lg-1">
+                <div class="blog-list-wrapper rounded-4 p-4 p-lg-3 position-sticky">
+                    <h5 class="mb-3"><i class="las la-newspaper"></i> Blog lainnya</h5>
+
+                    <hr class="border-2">
+
+                    <div class="row gy-4">
+                        <div class="col-md-6 col-lg-12">
+                            <a href="../blog/logic_algorithm.html" class="mb-3">
+                                <img src="../assets/images/logic_algorithm.jpeg"
+                                    alt="Dari Logika ke Algoritma: Langkah Demi Langkah"
+                                    class="full-width mb-3 mb-lg-2 rounded-3">
+
+                                <h6 class="link-custom">Dari Logika ke Algoritma: Langkah Demi Langkah</h6>
+                            </a>
+                        </div>
+
+                        <div class="col-md-6 col-lg-12">
+                            <a href="../blog/introduction_web_programming.html" class="mb-3">
+                                <img src="../assets/images/introduction_web_programming.jpg"
+                                    alt="Pengantar Web Programming: Apa yang Harus Anda Ketahui"
+                                    class="full-width mb-3 mb-lg-2 rounded-3">
+
+                                <h6 class="link-custom">Pengantar Web Programming: Apa yang Harus Anda Ketahui</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end of blog list -->
+
+            <!-- blog -->
+            <section class="col-lg-9 order-1 order-lg-2">
+                <div class="blog-wrapper rounded-4 p-lg-5">
+
+                    <!-- theme -->
+                    <div class="container">
+                        <div class="dropdown px-lg-5" data-aos="fade-right">
+                            <button class="btn dropdown-toggle" id="bd-theme" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+                                    <use href="#circle-half"></use>
+                                </svg>
+                                <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+                            </button>
+
+                            <ol class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+                                <li>
+                                    <button class="dropdown-item" type="button" data-bs-theme-value="light">
+                                        <svg class="bi me-2" width="1em" height="1em">
+                                            <use href="#sun-fill"></use>
+                                        </svg>
+                                        Light
+                                    </button>
+
+                                    <button class="dropdown-item" type="button" data-bs-theme-value="dark">
+                                        <svg class="bi me-2" width="1em" height="1em">
+                                            <use href="#moon-stars-fill"></use>
+                                        </svg>
+                                        Dark
+                                    </button>
+
+                                    <button class="dropdown-item" type="button" data-bs-theme-value="auto">
+                                        <svg class="bi me-2" width="1em" height="1em">
+                                            <use href="#circle-half"></use>
+                                        </svg>
+                                        Auto
+                                    </button>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <!-- end of theme -->
+
+                    <div>
+                        <a href="https://harybagus.github.io" class="me-0">
+                            <img src="../assets/images/selfisibagus.jpeg" alt="Bagus Hary" class="rounded-circle me-2"
+                                width="40">
+                            <span class="link-custom">Bagus Hary</span>
+                        </a>
+
+                        <span>~ 13 Juli 2024</span>
+                    </div>
+
+                    <h2 class="headline py-3">Kesalahan Umum yang Harus Dihindari Saat Belajar Web Programming</h2>
+
+                    <img src="../assets/images/common_mistakes.jpeg" alt="Logic and Algorithm"
+                        class="full-width rounded-4">
+
+                    <p class="opening py-3">Belajar web programming bisa menjadi perjalanan yang menantang namun sangat
+                        bermanfaat. Seperti belajar keterampilan baru lainnya, ada berbagai kesalahan yang sering
+                        dilakukan oleh pemula yang dapat menghambat kemajuan mereka. Berikut adalah beberapa kesalahan
+                        umum yang harus dihindari saat belajar web programming dan bagaimana cara mengatasinya.</p>
+
+                    <div class="table-of-content py-3">
+                        <h4>Daftar Isi</h4>
+                        <ul>
+                            <li><a href="#master-the-basics">Tidak Menguasai Dasar-Dasar Terlebih Dahulu</a></li>
+                            <li><a href="#lack-of-practice">Terlalu Banyak Belajar Teori, Kurang Praktik</a></li>
+                            <li><a href="#debugging">Mengabaikan Pentingnya Debugging</a></li>
+                            <li><a href="#version-control">Tidak Menggunakan Version Control</a></li>
+                            <li><a href="#unstructured">Belajar Secara Tidak Terstruktur</a></li>
+                            <li><a href="#community">Tidak Memanfaatkan Sumber Daya Komunitas</a></li>
+                            <li><a href="#give-up">Menyerah Terlalu Cepat</a></li>
+                            <li><a href="#best-practices">Mengabaikan Best Practices</a></li>
+                            <li><a href="#real-project">Tidak Membuat Proyek Nyata</a></li>
+                            <li><a href="#feedback">Tidak Meminta Umpan Balik</a></li>
+                            <li><a href="#conclusion">Kesimpulan</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="py-3" id="master-the-basics">
+                        <h4>Tidak Menguasai Dasar-Dasar Terlebih Dahulu</h4>
+
+                        <p>
+                            <span class="text-bold">Kesalahan</span>
+                            <br>
+                            Langsung melompat ke framework atau library canggih tanpa memahami dasar-dasarnya.
+                        </p>
+
+                        <p>
+                            <span class="text-bold">Solusi</span>
+                            <br>
+                            Pastikan Anda memiliki pemahaman yang solid tentang HTML, CSS, dan JavaScript sebelum
+                            mencoba teknologi yang lebih maju seperti React atau Angular. Dasar yang kuat akan
+                            mempermudah Anda mempelajari konsep yang lebih kompleks.
+                        </p>
+                    </div>
+
+                    <div class="py-3" id="lack-of-practice">
+                        <h4>Terlalu Banyak Belajar Teori, Kurang Praktik</h4>
+
+                        <p>
+                            <span class="text-bold">Kesalahan</span>
+                            <br>
+                            Menghabiskan terlalu banyak waktu untuk membaca buku atau menonton tutorial tanpa
+                            menerapkannya.
+                        </p>
+
+                        <p>
+                            <span class="text-bold">Solusi</span>
+                            <br>
+                            Segera setelah mempelajari konsep baru, cobalah untuk menerapkannya dalam proyek kecil.
+                            Praktik langsung akan memperkuat pemahaman Anda dan membantu Anda mengingat lebih lama.
+                        </p>
+                    </div>
+
+                    <div class="py-3" id="debugging">
+                        <h4>Mengabaikan Pentingnya Debugging</h4>
+
+                        <p>
+                            <span class="text-bold">Kesalahan</span>
+                            <br>
+                            Merasa frustrasi dan menyerah ketika menghadapi bug atau kesalahan dalam kode.
+                        </p>
+
+                        <p>
+                            <span class="text-bold">Solusi</span>
+                            <br>
+                            Anggap debugging sebagai bagian penting dari proses belajar. Pelajari cara menggunakan alat
+                            debugging yang tersedia di browser Anda dan jangan takut untuk mencari solusi di forum atau
+                            dokumentasi.
+                        </p>
+                    </div>
+
+                    <div class="py-3" id="version-control">
+                        <h4>Tidak Menggunakan Version Control</h4>
+
+                        <p>
+                            <span class="text-bold">Kesalahan</span>
+                            <br>
+                            Tidak menggunakan sistem version control seperti Git untuk melacak perubahan pada kode Anda.
+                        </p>
+
+                        <p>
+                            <span class="text-bold">Solusi</span>
+                            <br>
+                            Pelajari dasar-dasar Git dan GitHub. Ini akan membantu Anda melacak perubahan, bekerja
+                            secara kolaboratif, dan menghindari kehilangan kode penting.
+                        </p>
+                    </div>
+
+                    <div class="py-3" id="unstructured">
+                        <h4>Belajar Secara Tidak Terstruktur</h4>
+
+                        <p>
+                            <span class="text-bold">Kesalahan</span>
+                            <br>
+                            Mempelajari topik secara acak tanpa rencana yang jelas.
+                        </p>
+
+                        <p>
+                            <span class="text-bold">Solusi</span>
+                            <br>
+                            Buatlah rencana belajar yang terstruktur. Tentukan topik apa yang ingin Anda pelajari dalam
+                            jangka waktu tertentu dan ikuti kurikulum yang sistematis, seperti yang disediakan oleh
+                            platform belajar online.
+                        </p>
+                    </div>
+
+                    <div class="py-3" id="community">
+                        <h4>Tidak Memanfaatkan Sumber Daya Komunitas</h4>
+
+                        <p>
+                            <span class="text-bold">Kesalahan</span>
+                            <br>
+                            Belajar sendirian tanpa bergabung dengan komunitas atau forum diskusi.
+                        </p>
+
+                        <p>
+                            <span class="text-bold">Solusi</span>
+                            <br>
+                            Bergabunglah dengan komunitas online seperti Stack Overflow, Reddit, atau grup belajar
+                            lokal. Anda dapat belajar banyak dari pengalaman orang lain dan mendapatkan bantuan saat
+                            menghadapi kesulitan.
+                        </p>
+                    </div>
+
+                    <div class="py-3" id="give-up">
+                        <h4>Menyerah Terlalu Cepat</h4>
+
+                        <p>
+                            <span class="text-bold">Kesalahan</span>
+                            <br>
+                            Mudah menyerah ketika menghadapi tantangan atau konsep yang sulit.
+                        </p>
+
+                        <p>
+                            <span class="text-bold">Solusi</span>
+                            <br>
+                            Tetaplah konsisten dan jangan mudah menyerah. Web programming membutuhkan waktu dan latihan.
+                            Beri diri Anda waktu untuk memahami dan menguasai konsep-konsep baru.
+                        </p>
+                    </div>
+
+                    <div class="py-3" id="best-practices">
+                        <h4>Mengabaikan Best Practices</h4>
+
+                        <p>
+                            <span class="text-bold">Kesalahan</span>
+                            <br>
+                            Tidak mengikuti praktik terbaik dalam menulis kode, seperti penamaan variabel yang jelas dan
+                            struktur kode yang rapi.
+                        </p>
+
+                        <p>
+                            <span class="text-bold">Solusi</span>
+                            <br>
+                            Pelajari dan terapkan best practices dalam kode Anda. Ini termasuk menulis kode yang bersih,
+                            terdokumentasi dengan baik, dan mudah dipahami oleh orang lain.
+                        </p>
+                    </div>
+
+                    <div class="py-3" id="real-project">
+                        <h4>Tidak Membuat Proyek Nyata</h4>
+
+                        <p>
+                            <span class="text-bold">Kesalahan</span>
+                            <br>
+                            Hanya mengikuti tutorial tanpa membuat proyek nyata.
+                        </p>
+
+                        <p>
+                            <span class="text-bold">Solusi</span>
+                            <br>
+                            Buatlah proyek nyata yang bisa menunjukkan kemajuan Anda. Misalnya, buatlah portofolio
+                            online, blog, atau aplikasi sederhana. Ini akan memberi Anda pengalaman praktis dan
+                            portofolio yang dapat ditunjukkan kepada calon pemberi kerja.
+                        </p>
+                    </div>
+
+                    <div class="py-3" id="feedback">
+                        <h4>Tidak Meminta Umpan Balik</h4>
+
+                        <p>
+                            <span class="text-bold">Kesalahan</span>
+                            <br>
+                            Tidak mencari atau menerima umpan balik atas kode yang Anda tulis.
+                        </p>
+
+                        <p>
+                            <span class="text-bold">Solusi</span>
+                            <br>
+                            Mintalah umpan balik dari mentor, teman, atau komunitas. Umpan balik yang konstruktif akan
+                            membantu Anda memperbaiki kesalahan dan meningkatkan keterampilan Anda.
+                        </p>
+                    </div>
+
+                    <div class="py-3 py-lg-0" id="conclusion">
+                        <h4>Kesimpulan</h4>
+
+                        <p>
+                            Menghindari kesalahan-kesalahan umum ini dapat membuat perjalanan belajar web programming
+                            Anda lebih lancar dan efektif. Fokus pada dasar-dasarnya, praktik secara teratur, dan jangan
+                            takut untuk meminta bantuan dan umpan balik. Dengan konsistensi dan dedikasi, Anda akan
+                            menjadi web programmer yang handal.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+            <!-- end of blog -->
+
+        </div>
+
+    </div>
+
+    <!-- java script -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/theme.js"></script>
+    <script src="../assets/js/blog.js"></script>
+
+    <!-- prism.js -->
+    <script src="../assets/js/prism.js"></script>
+
+</body>
+
+</html>

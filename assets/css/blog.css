@@ -41,6 +41,7 @@ a {
 /* blog list */
 .blog-list-wrapper {
   background-color: var(--bs-success-bg-subtle);
+  top: 1.5rem;
 }
 
 /* dropdown */
