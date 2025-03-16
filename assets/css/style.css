@@ -10,3 +10,56 @@
 body {
   font-family: var(--font-base);
 }
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.text-brand {
+  color: var(--primary-color);
+}
+
+/* link custom */
+.link-custom {
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 0;
+}
+
+.link-custom::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  background-color: var(--primary-color);
+  left: 0;
+  top: 100%;
+  transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+  width: 100%;
+}
+
+/* navbar */
+.navbar {
+  background-color: rgba(253, 238, 220, 0.75);
+}
+
+.navbar .navbar-brand {
+  color: var(--primary-color);
+}
+
+.navbar .navbar-brand:hover {
+  transform: rotate(-5deg);
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  color: rgb(75, 75, 75);
+}
+
+.navbar .nav-link:hover {
+  color: var(--primary-color);
+}
