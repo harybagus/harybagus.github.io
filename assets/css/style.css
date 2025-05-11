@@ -3,6 +3,7 @@
 :root {
   --primary-color: #e38b29;
   --secondary-color: #f1a661;
+  --tertiary-color: #4b4b4b;
   --background-color: #fdeedc;
   --font-base: "Poppins", sans-serif;
 }
@@ -18,6 +19,16 @@ a {
 
 .text-brand {
   color: var(--primary-color);
+}
+
+.btn-brand {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-brand:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
 }
 
 /* link custom */
@@ -44,7 +55,7 @@ a {
 
 /* navbar */
 .navbar {
-  background-color: rgba(253, 238, 220, 0.75);
+  background-color: rgba(253, 238, 220, 0.9);
 }
 
 .navbar .navbar-brand {
@@ -57,9 +68,56 @@ a {
 
 .navbar .nav-link {
   font-weight: 500;
-  color: rgb(75, 75, 75);
+  color: var(--tertiary-color);
 }
 
-.navbar .nav-link:hover {
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
   color: var(--primary-color);
+}
+
+/* full height */
+.full-height {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* hero */
+.hero-text {
+  min-height: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.hero-text .hero-text-start,
+.hero-text .hero-text-end {
+  color: var(--tertiary-color);
+}
+
+.hero-text .hero-text-name {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.hero-image {
+  margin: 50px 0;
+  min-width: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hero-image img {
+  border: 5px solid var(--primary-color);
+}
+
+.hero-link {
+  margin-top: 30px;
 }
