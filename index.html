@@ -19,7 +19,38 @@
 
 <body>
     <!-- ========== NAVBAR ========== -->
-    <header id="navbar"></header>
+    <header id="navbar">
+        <nav class="navbar container">
+
+            <!-- Logo -->
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Bagus Hary<span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <!-- Desktop Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Right controls -->
+            <div class="nav-controls">
+                <!-- Dark/Light toggle -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+                    <span class="theme-icon">☀️</span>
+                </button>
+
+                <!-- Hamburger (mobile) -->
+                <button class="hamburger" id="hamburger" aria-label="Open menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+
+        </nav>
+    </header>
 
     <main>
         <!-- ========== HERO ========== -->
