@@ -100,4 +100,31 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(typeNext, 600);
     }
 
+    // ── Dark / Light Mode ─────────────────────────────────────
+    const themeToggle = document.getElementById('themeToggle');
+    const root = document.documentElement;
+
+    // Icons
+    const ICONS = { dark: '☀️', light: '🌙' };
+
+    /**
+     * Apply theme and update button icon.
+     * @param {'dark'|'light'} theme
+     */
+    function applyTheme(theme) {
+        root.setAttribute('data-theme', theme);
+        themeToggle.querySelector('.theme-icon').textContent = ICONS[theme];
+        localStorage.setItem('theme', theme);
+    }
+
+    // Load saved preference; default to 'dark'
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    applyTheme(savedTheme);
+
+    // Toggle on click
+    themeToggle.addEventListener('click', () => {
+        const current = root.getAttribute('data-theme');
+        applyTheme(current === 'dark' ? 'light' : 'dark');
+    });
+
 });
