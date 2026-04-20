@@ -804,6 +804,104 @@ h4 {
 }
 
 /* ============================================================
+   EDUCATION
+   ============================================================ */
+#education {
+  padding: 6rem 0;
+  background: var(--bg-secondary);
+}
+
+.section-header {
+  margin-bottom: 3rem;
+}
+
+/* Timeline */
+.edu-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-left: 2rem;
+  border-left: 1px solid var(--border);
+  margin-bottom: 3rem;
+}
+
+.edu-item {
+  position: relative;
+}
+
+.edu-dot {
+  position: absolute;
+  left: -2.375rem;
+  top: 1.5rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid var(--bg-secondary);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.edu-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: border-color var(--transition);
+}
+.edu-card:hover {
+  border-color: var(--border-strong);
+}
+
+.edu-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.edu-degree {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  font-weight: 500;
+}
+.edu-school {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0.2rem 0;
+}
+.edu-period {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.edu-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.edu-badge--active {
+  background: rgba(34, 197, 94, 0.1);
+  border-color: rgba(34, 197, 94, 0.3);
+  color: #22c55e;
+}
+
+.edu-note {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* ============================================================
    BACK TO TOP BUTTON
    ============================================================ */
 .back-to-top {
