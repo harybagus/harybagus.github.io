@@ -142,4 +142,27 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
+    // ── SCROLL REVEAL ─────────────────────────────────────────
+    const revealEls = document.querySelectorAll(
+        '.edu-card, .project-card, .repo-card, .cert-card, .contact-left, .contact-link-card, .about-grid, .skill-item, .section-header'
+    );
+
+    // Add reveal class
+    revealEls.forEach(el => el.classList.add('reveal'));
+
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+                // Stagger delay based on index among siblings
+                const siblings = [...entry.target.parentElement.children];
+                const idx = siblings.indexOf(entry.target);
+                entry.target.style.transitionDelay = `${idx * 80}ms`;
+                entry.target.classList.add('visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    revealEls.forEach(el => revealObserver.observe(el));
+
 });
