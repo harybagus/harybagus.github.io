@@ -127,6 +127,10 @@ document.addEventListener('DOMContentLoaded', () => {
         applyTheme(current === 'dark' ? 'light' : 'dark');
     });
 
+    // ── YEAR IN FOOTER ────────────────────────────────────────
+    const footerYear = document.getElementById('footerYear');
+    if (footerYear) footerYear.textContent = new Date().getFullYear();
+
     // ── BACK TO TOP ───────────────────────────────────────────
     const backToTop = document.getElementById('backToTop');
 
