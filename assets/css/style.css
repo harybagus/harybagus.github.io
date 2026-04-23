@@ -803,6 +803,14 @@ h4 {
   }
 }
 
+@media (max-width: 480px) {
+  .about-card-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+}
+
 /* ============================================================
    EDUCATION
    ============================================================ */
